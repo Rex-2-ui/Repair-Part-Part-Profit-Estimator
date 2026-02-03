@@ -23,4 +23,8 @@
         Button2.Enabled = False
 
     End Sub
+
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
+
+    End Sub
 End Class

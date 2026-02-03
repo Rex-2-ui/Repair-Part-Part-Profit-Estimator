@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         GroupBox1 = New GroupBox()
         TextBox2 = New TextBox()
         TextBox1 = New TextBox()
@@ -44,6 +45,9 @@ Partial Class Form1
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
+        ToolTip1 = New ToolTip(components)
+        ToolTip2 = New ToolTip(components)
+        ToolTip3 = New ToolTip(components)
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -130,6 +134,7 @@ Partial Class Form1
         TextBox3.Size = New Size(274, 30)
         TextBox3.TabIndex = 7
         TextBox3.Text = "123.45"
+        ToolTip1.SetToolTip(TextBox3, "Displays the Retail Price")
         ' 
         ' TextBox4
         ' 
@@ -139,6 +144,7 @@ Partial Class Form1
         TextBox4.Size = New Size(274, 30)
         TextBox4.TabIndex = 8
         TextBox4.Text = "73.45"
+        ToolTip2.SetToolTip(TextBox4, "Displays Wholesale Cost")
         ' 
         ' TextBox5
         ' 
@@ -148,11 +154,14 @@ Partial Class Form1
         TextBox5.Size = New Size(179, 30)
         TextBox5.TabIndex = 9
         TextBox5.Text = "2"
+        ToolTip3.SetToolTip(TextBox5, "Displays Number of Items")
         ' 
         ' TextBox6
         ' 
+        TextBox6.Enabled = False
         TextBox6.Location = New Point(256, 166)
         TextBox6.Name = "TextBox6"
+        TextBox6.ReadOnly = True
         TextBox6.RightToLeft = RightToLeft.Yes
         TextBox6.Size = New Size(274, 30)
         TextBox6.TabIndex = 10
@@ -160,8 +169,10 @@ Partial Class Form1
         ' 
         ' TextBox7
         ' 
+        TextBox7.Enabled = False
         TextBox7.Location = New Point(256, 212)
         TextBox7.Name = "TextBox7"
+        TextBox7.ReadOnly = True
         TextBox7.RightToLeft = RightToLeft.Yes
         TextBox7.Size = New Size(274, 30)
         TextBox7.TabIndex = 11
@@ -169,8 +180,10 @@ Partial Class Form1
         ' 
         ' TextBox8
         ' 
+        TextBox8.Enabled = False
         TextBox8.Location = New Point(256, 259)
         TextBox8.Name = "TextBox8"
+        TextBox8.ReadOnly = True
         TextBox8.RightToLeft = RightToLeft.Yes
         TextBox8.Size = New Size(274, 30)
         TextBox8.TabIndex = 12
@@ -278,9 +291,11 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
+        AcceptButton = Button1
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Info
+        CancelButton = Button2
         ClientSize = New Size(877, 497)
         Controls.Add(Button4)
         Controls.Add(Button3)
@@ -319,5 +334,8 @@ Partial Class Form1
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
 
 End Class
