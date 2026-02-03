@@ -212,7 +212,7 @@ Partial Class Form1
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(400, 27)
         TextBox1.TabIndex = 2
-        TextBox1.Text = "X456"
+        TextBox1.Text = "X456YVK98"
         ' 
         ' TextBox2
         ' 
@@ -220,48 +220,61 @@ Partial Class Form1
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(400, 27)
         TextBox2.TabIndex = 6
+        TextBox2.Text = "Radiator, Ford Escort"
         ' 
         ' TextBox3
         ' 
         TextBox3.Location = New Point(256, 47)
         TextBox3.Name = "TextBox3"
+        TextBox3.RightToLeft = RightToLeft.Yes
         TextBox3.Size = New Size(274, 30)
         TextBox3.TabIndex = 7
+        TextBox3.Text = "123.45"
         ' 
         ' TextBox4
         ' 
         TextBox4.Location = New Point(256, 89)
         TextBox4.Name = "TextBox4"
+        TextBox4.RightToLeft = RightToLeft.Yes
         TextBox4.Size = New Size(274, 30)
         TextBox4.TabIndex = 8
+        TextBox4.Text = "73.45"
         ' 
         ' TextBox5
         ' 
         TextBox5.Location = New Point(351, 130)
         TextBox5.Name = "TextBox5"
+        TextBox5.RightToLeft = RightToLeft.Yes
         TextBox5.Size = New Size(179, 30)
         TextBox5.TabIndex = 9
+        TextBox5.Text = "2"
         ' 
         ' TextBox6
         ' 
         TextBox6.Location = New Point(256, 166)
         TextBox6.Name = "TextBox6"
+        TextBox6.RightToLeft = RightToLeft.Yes
         TextBox6.Size = New Size(274, 30)
         TextBox6.TabIndex = 10
+        TextBox6.TabStop = False
         ' 
         ' TextBox7
         ' 
         TextBox7.Location = New Point(256, 212)
         TextBox7.Name = "TextBox7"
+        TextBox7.RightToLeft = RightToLeft.Yes
         TextBox7.Size = New Size(274, 30)
         TextBox7.TabIndex = 11
+        TextBox7.TabStop = False
         ' 
         ' TextBox8
         ' 
         TextBox8.Location = New Point(256, 259)
         TextBox8.Name = "TextBox8"
+        TextBox8.RightToLeft = RightToLeft.Yes
         TextBox8.Size = New Size(274, 30)
         TextBox8.TabIndex = 12
+        TextBox8.TabStop = False
         ' 
         ' Form1
         ' 
